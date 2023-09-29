@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "futura-pt";
+  src: local("futura-pt"),
+    url("./fonts/futura-pt/FuturaPTBook.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura-pt-bold";
+  src: local("futura-pt"),
+    url("./fonts/futura-pt/FuturaPTCondMedium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura-pt-light";
+  src: local("futura-pt"),
+    url("./fonts/futura-pt/FuturaPTLight.otf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bold {
+  font-family: "futura-pt-bold";
+}
+.light {
+  font-family: "futura-pt-light";
+}
+.regular {
+  font-family: "futura-pt";
+}
