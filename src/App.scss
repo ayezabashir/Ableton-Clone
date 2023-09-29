@@ -1,3 +1,10 @@
+$yellow-color: #fbffa7;
+$light-blue-color: #b1c5ff;
+$green-color: #b6ffc0;
+$red-color: #ff764d;
+$purple-color: #d5b3ff;
+$dark-blue: #0000ff;
+
 @font-face {
   font-family: "futura-pt";
   src: local("futura-pt"),
@@ -15,6 +22,7 @@
   src: local("futura-pt"),
     url("./fonts/futura-pt/FuturaPTLight.otf") format("truetype");
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,16 +34,35 @@ html {
 }
 
 body {
+  font-size: 16px;
+  width: 100vw;
+  line-height: 1.5;
+  overflow-x: hidden;
   font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.bold {
-  font-family: "futura-pt-bold";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
-.light {
+.font-regular {
+  font-family: "futura-pt";
+}
+.font-light {
   font-family: "futura-pt-light";
 }
-.regular {
-  font-family: "futura-pt";
+.font-bold {
+  font-family: "futura-pt-bold";
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
