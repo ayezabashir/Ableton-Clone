@@ -160,3 +160,42 @@ svg {
     }
   }
 }
+.header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    .container {
+      .top {
+        display: flex;
+        align-items: center;
+        .logo {
+          margin-right: 30px;
+        }
+        .menu-mobile {
+          cursor: pointer;
+        }
+      }
+      .bottom {
+        .mobile-links {
+          padding: 10px;
+          ul {
+            li {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
