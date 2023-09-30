@@ -329,4 +329,19 @@ button {
       }
     }
   }
+  .footer {
+    .footer-row {
+      flex-direction: column;
+      margin-bottom: 20px;
+      .footer-col {
+        margin-bottom: 20px;
+      }
+    }
+    .help {
+      flex-direction: column;
+      .contact {
+        flex-direction: column;
+      }
+    }
+  }
 }
