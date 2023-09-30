@@ -3,6 +3,8 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa'
 import { useState, useMemo } from 'react'
 import countryList from 'react-select-country-list'
 import Select from 'react-select';
+import logo from '/logo.svg'
+
 const Footer = () => {
     const [value, setValue] = useState('');
     const [selectedOption, setSelectedOption] = useState('Languages')
@@ -75,6 +77,24 @@ const Footer = () => {
                                 options={langOptions}
                             />
                             <Select options={options} value={value} onChange={changeHandler} />
+                        </div>
+                        <div className="footer-row">
+                            <div className="footer-col">
+                                <ul>
+                                    <li>Contact Us</li>
+                                    <li>Press Resource</li>
+                                    <li>Legal Info</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Cookie Settings</li>
+                                    <li>Imprint</li>
+                                </ul>
+                            </div>
+                            <div className="footer-col">
+                                <p>Made in Berlin</p>
+                                <div className="logo">
+                                    <img src={logo} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
