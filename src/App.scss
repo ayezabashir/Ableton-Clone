@@ -64,7 +64,6 @@ ul {
   font-family: "futura-pt-bold";
 }
 .container {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 16px 30px;
 }
@@ -178,6 +177,23 @@ button {
   display: none;
 }
 
+// Menubar
+.menubar {
+  margin: 10px 0;
+  .container {
+    .stickybar {
+      ul {
+        display: flex;
+        .nav-links {
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
 // Footer
 .footer {
   margin-top: 20px;
@@ -187,7 +203,7 @@ button {
       padding: 4.33vw;
       padding-bottom: 2.33vw;
       .footer-row {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         h1 {
           font-size: 4rem;
         }
@@ -332,15 +348,26 @@ button {
   .footer {
     .footer-row {
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 20px !important;
       .footer-col {
         margin-bottom: 20px;
+        .options {
+          .select {
+            width: 100%;
+          }
+        }
+        &:last-child {
+          min-width: 50%;
+        }
       }
     }
     .help {
       flex-direction: column;
+      align-items: baseline;
       .contact {
         flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 20px;
       }
     }
   }

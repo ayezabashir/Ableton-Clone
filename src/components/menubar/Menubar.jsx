@@ -1,4 +1,7 @@
 import { useState } from "react"
+import Jobs from "../jobs/Jobs";
+import About from "../about/About";
+import Apprenticeships from "../apprenticeships/Apprenticeships";
 
 const Menubar = () => {
     const [showAbout, setShowAbout] = useState(true);
@@ -27,27 +30,27 @@ const Menubar = () => {
                 <div className="container">
                     <div className="stickybar">
                         <ul>
-                            <li className="nav-links" onClick={handleAbout}>
+                            <li className="nav-links" onClick={handleAbout} style={showAbout ? { color: "#ff764d" } : { color: "#000" }}>
                                 About
-                                {
-                                    showAbout && <div>About component</div>
-                                }
                             </li>
-                            <li className="nav-links" onClick={handleJobs}>
+                            <li className="nav-links" onClick={handleJobs} style={showJobs ? { color: "#ff764d" } : { color: "#000" }}>
                                 Jobs
-                                {
-                                    showJobs && <div>Jobs component</div>
-                                }
                             </li>
-                            <li className="nav-links" onClick={handleAppre}>
+                            <li className="nav-links" onClick={handleAppre} style={showAppre ? { color: "#ff764d" } : { color: "#000" }}>
                                 Apprenticeships
-                                {
-                                    showAppre && <div>Appreee component</div>
-                                }
                             </li>
                         </ul>
                     </div>
                 </div>
+                {
+                    showAbout && <About />
+                }
+                {
+                    showJobs && <Jobs />
+                }
+                {
+                    showAppre && <Apprenticeships />
+                }
             </div>
         </>
     )
