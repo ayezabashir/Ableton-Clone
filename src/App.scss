@@ -365,6 +365,72 @@ button {
       right: 0;
     }
   }
+  .about-imgs4 {
+    margin-bottom: 6rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+    .pic1,
+    .pic2 {
+      width: 50%;
+      position: absolute;
+    }
+    .purple {
+      height: 80vh;
+      width: 70vw;
+      z-index: -1;
+      background: $purple-color;
+    }
+    .pic1 {
+      left: 0;
+      top: 30%;
+      width: 33vw;
+      height: 25vw;
+      margin-left: 5vw;
+    }
+    .pic2 {
+      right: 0;
+      width: 41.6vw;
+      height: 41.6vw;
+      margin-left: 16.6vw;
+    }
+  }
+  .about-jobs {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    img {
+      width: 40vw;
+    }
+    .jobs-text {
+      background: $light-blue-color;
+      width: 41vw;
+      height: 41vw;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 0;
+      margin-right: 0;
+      .text {
+        position: absolute;
+        width: 25%;
+        top: 50%;
+        transform: translate(100px, -100px);
+        a {
+          display: flex;
+          margin-top: 1rem;
+          color: #0000ff;
+          align-items: center;
+          svg {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Footer

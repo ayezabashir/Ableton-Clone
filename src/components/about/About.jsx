@@ -57,6 +57,7 @@ const About = () => {
                 </div>
                 <div className="about-imgs4">
                     <img src={photo6} alt="" className="pic1" />
+                    <div className="purple"></div>
                     <img src={photo7} alt="" className='pic2' />
                 </div>
                 <div className="about-text">
@@ -64,10 +65,12 @@ const About = () => {
                     <p>If you&apos;re joining us in Berlin, we&apos;ll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.</p>
                 </div>
                 <div className="about-jobs">
-                    <img src={photo8} alt="" />
+                    <img src={photo8} alt="" className='pic1' />
                     <div className="jobs-text">
-                        <p>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</p>
-                        <a href="#">See Latest Jobs <AiOutlineRight /> </a>
+                        <div className="text">
+                            <p className='font-light'>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</p>
+                            <a href="#">See Latest Jobs <AiOutlineRight /> </a>
+                        </div>
                     </div>
                 </div>
             </div>
