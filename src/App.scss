@@ -282,18 +282,22 @@ button {
 .about {
   margin: 20px 30px;
   .about-header {
-    margin-left: 8.3vw;
-    margin-right: 8.3vw;
-    margin-bottom: 8.3vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 8vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2.0&fit=crop&fm=jpg&h=680&ixjsv=1.1.3&q=50&w=1067");
     position: relative;
+    height: 50vw;
     .headline {
       position: absolute;
       top: 50%;
       left: 50%;
+      color: $red-color;
+      transform: translate(-50%, -50%);
+      font-size: 6rem;
     }
   }
   .about-text {
@@ -303,24 +307,62 @@ button {
     .blue {
       color: $dark-blue;
     }
+    h2 {
+      margin-bottom: 1rem;
+    }
   }
   .about-imgs {
     display: flex;
     align-items: center;
+    position: relative;
+    margin-bottom: 9vw;
     .pic1 {
       width: 41.67vw;
       height: 41.67vw;
       margin-left: 8.3vw;
+      z-index: 11;
     }
     .pic2 {
-      background: $yellow-color;
+      position: absolute;
+      background: #fbffa7;
       width: 58.3vw;
-      height: 58.3vw;
+      top: -51px;
+      height: 50vw;
       left: 41.67vw;
-      padding: 40px;
+      padding: 70px;
       img {
         width: 100%;
+        padding: 5rem;
+        margin-left: 4vw;
       }
+    }
+  }
+  .about-imgs2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6rem;
+    img {
+      width: 100%;
+    }
+    .left {
+      width: 60vw;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      background: $green-color;
+      .pic1,
+      .pic2 {
+        padding: 40px;
+        padding: 4rem 20px;
+        width: 75%;
+      }
+    }
+    .right {
+      width: 40vw;
+      position: absolute;
+      right: 0;
     }
   }
 }
