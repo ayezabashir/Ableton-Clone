@@ -749,4 +749,31 @@ button {
       padding-right: 0 !important;
     }
   }
+  .about {
+    .about-header {
+      .headline {
+        font-size: 40px;
+      }
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .about-text {
+      width: 100%;
+      padding: 0 35px;
+    }
+    .about-imgs {
+      .pic2 {
+        top: -12px;
+        height: 45vw;
+        padding: 47px;
+        img {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
