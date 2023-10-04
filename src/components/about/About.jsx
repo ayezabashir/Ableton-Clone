@@ -68,7 +68,7 @@ const About = () => {
                     <div className="jobs-text">
                         <div className="text">
                             <p className='font-light'>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</p>
-                            <a href="#">See Latest Jobs <AiOutlineRight /> </a>
+                            <a className='font-bold' href="#">See Latest Jobs <AiOutlineRight /> </a>
                         </div>
                     </div>
                 </div>

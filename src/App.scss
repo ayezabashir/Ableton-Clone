@@ -415,6 +415,7 @@ button {
       width: 40vw;
     }
     .jobs-text {
+      margin-bottom: 4rem;
       background: $light-blue-color;
       width: 41vw;
       height: 41vw;
@@ -692,6 +693,37 @@ button {
   .apprenticeships {
     .appren-text {
       width: 100%;
+    }
+  }
+  .about {
+    .about-jobs {
+      img {
+        display: none;
+      }
+    }
+    .about-imgs {
+      .pic1 {
+        height: 38vw;
+      }
+      .pic2 {
+        img {
+          padding: 0;
+        }
+      }
+    }
+    .about-imgs2 {
+      .right {
+        width: 46vw;
+      }
+    }
+    .about-imgs4 {
+      .pic1 {
+        width: 40vw;
+        height: 31vw;
+      }
+      .purple {
+        height: 50vw;
+      }
     }
   }
 }
