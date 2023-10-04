@@ -6,7 +6,6 @@ import photo5 from '/images/photo-5.jpg'
 import photo7 from '/images/photo-7.jpg'
 import photo8 from '/images/photo-8.jpg'
 import photo6 from '/images/photo-6-a.jpg'
-import poster from '/images/poster-meet-the-makers.avif'
 import { AiOutlineRight } from 'react-icons/ai'
 const About = () => {
     return (
@@ -48,7 +47,7 @@ const About = () => {
                     <p>Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.</p>
                 </div>
                 <div className="about-imgs3">
-                    <img src={poster} alt="" />
+                    <img src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2.0&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=1067" alt="" />
                 </div>
                 <div className="about-text">
                     <h2>We’re passionate about what we do, but we’re equally passionate about improving who we are.</h2>

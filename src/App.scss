@@ -280,7 +280,7 @@ button {
 
 // About
 .about {
-  margin: 20px 30px;
+  margin: 20px 0;
   .about-header {
     margin-left: 8vw;
     margin-right: 8vw;
@@ -363,6 +363,14 @@ button {
       width: 40vw;
       position: absolute;
       right: 0;
+    }
+  }
+  .about-imgs3 {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 8vw;
+    img {
+      width: 100%;
     }
   }
   .about-imgs4 {
