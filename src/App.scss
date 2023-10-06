@@ -442,6 +442,50 @@ button {
   }
 }
 
+// Cookies
+.cookies {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1111;
+  left: 30px;
+  width: 35vw;
+  height: auto;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  .detail {
+    p {
+      font-size: 14px;
+    }
+  }
+  .accept {
+    button {
+      cursor: pointer;
+      width: 100%;
+      background: $dark-blue;
+      color: #fff;
+      font-size: 20px;
+      margin: 10px 0;
+      padding: 5px 10px;
+    }
+  }
+  .close {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      cursor: pointer;
+      padding: 5px 10px;
+      width: 49%;
+      font-size: 20px;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+}
+
 // Footer
 .footer {
   margin-top: 20px;
