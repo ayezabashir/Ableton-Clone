@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import logo from '/logo.svg'
 import { AiOutlineMinus, AiOutlinePlus, AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
-import Login from '../login/Login';
 
 const Header = () => {
     const [moreClick, setMoreClick] = useState(false);
@@ -41,9 +39,7 @@ const Header = () => {
                     <section className="right">
                         <ul className='flex'>
                             <li>Try Live for free</li>
-                            <li>
-                                <Link to={Login}>Log in or register</Link>
-                            </li>
+                            <li>Log in or register</li>
                         </ul>
                     </section>
                 </div>
