@@ -28,7 +28,35 @@ const About = () => {
                     <h2>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.</h2>
                     <p className='font-light'>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</p>
                 </div>
-                <div className="about-vid"></div>
+                <div className="about-vid">
+                    <figure>
+                        <div className="vid">
+                            <a href="https://www.youtube.com/watch?v=9SbnhgjeyXA" className="youtube-link" role="button">
+                                <div className="play">
+                                    <span aria-hidden="true" className="circle">
+                                        <svg className="abl-circle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56"><polygon fill="currentColor" points="0 0 0 56 48 28 0 0"></polygon></svg>
+                                    </span>
+                                </div>
+                                <img alt="" className="vid-img" data-src="https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=320"
+                                    data-srcset="https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=320 320w,
+  
+                                                https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=768 768w,
+                                            
+                                                https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=1024 1024w,
+                                            
+                                                https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=1280 1280w,
+                                            
+                                                https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=1440 1440w,
+                                            
+                                                https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;w=1462 1462w
+                                            
+                                            " src="https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&amp;dpr=2.0&amp;ixjsv=1.1.3&amp;q=50&amp;w=640" />
+                            </a>
+
+                        </div>
+                        <figcaption aria-hidden="true" className="abl-figure__caption abl-pa-10 abl-ma-0"><p className="abl-type-ct abl-type-cb">Why Ableton - Juanpe Bolivar</p></figcaption>
+                    </figure>
+                </div>
                 <div className="about-text">
                     <h2>We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</h2>
                     <p className='font-light'>Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</p>
