@@ -311,6 +311,50 @@ button {
       margin-bottom: 1rem;
     }
   }
+  .about-vid {
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 8.3vw;
+    figure {
+      width: 100%;
+      .vid {
+        position: relative;
+        .youtube-link {
+          cursor: pointer;
+          .play {
+            .circle {
+              width: 6.25rem;
+              height: 6.25rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: 0;
+              padding: 0;
+              border-radius: 50%;
+              background: $dark-blue;
+              top: 50%;
+              left: 50%;
+              position: absolute;
+              z-index: 111;
+              transform: translate(-50px, -50px);
+            }
+            svg {
+              position: absolute;
+              top: 2rem;
+              left: 2.2rem;
+              width: 1.875rem;
+              height: 2.125rem;
+              color: #fff;
+            }
+          }
+          img {
+            width: 100%;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
   .about-imgs {
     display: flex;
     align-items: center;
@@ -628,6 +672,9 @@ button {
     .about-text {
       width: 66vw;
     }
+    .about-vid {
+      width: 66vw;
+    }
     .about-jobs {
       flex-direction: column;
       margin-left: 8vw;
@@ -806,6 +853,10 @@ button {
       font-size: 16px;
     }
     .about-text {
+      width: 100%;
+      padding: 0 35px;
+    }
+    .about-vid {
       width: 100%;
       padding: 0 35px;
     }
