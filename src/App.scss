@@ -851,7 +851,7 @@ button {
       .jobs-text {
         height: inherit !important;
         .text {
-          transform: translate(50px, -100px);
+          transform: translate(40px, -100px);
         }
       }
     }
@@ -894,9 +894,12 @@ button {
       }
       .jobs-text {
         position: static;
-        height: 20vh !important;
+        height: 25vh !important;
         .text {
-          top: 24rem;
+          top: 19rem;
+          p {
+            font-size: 14px;
+          }
         }
       }
     }
