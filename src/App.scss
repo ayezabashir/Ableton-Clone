@@ -872,3 +872,27 @@ button {
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .cookies {
+    left: 20px;
+    width: 85vw;
+    .detail {
+      p {
+        font-size: 12px;
+      }
+    }
+    .accept {
+      button {
+        font-size: 16px;
+        padding: 3px 7px;
+      }
+    }
+    .close {
+      button {
+        padding: 3px 7px;
+        font-size: 16px;
+      }
+    }
+  }
+}
