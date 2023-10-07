@@ -846,6 +846,15 @@ button {
         font-size: 40px;
       }
     }
+    .about-jobs {
+      height: 40vh;
+      .jobs-text {
+        height: inherit !important;
+        .text {
+          transform: translate(50px, -100px);
+        }
+      }
+    }
     h2 {
       font-size: 20px;
     }
@@ -874,9 +883,36 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+  .about {
+    .about-jobs {
+      display: block;
+      height: 50vh;
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .jobs-text {
+        position: static;
+        height: 20vh !important;
+        .text {
+          top: 24rem;
+        }
+      }
+    }
+    .about-imgs2 {
+      .left {
+        .pic1,
+        .pic2 {
+          padding: 1rem 16px;
+        }
+      }
+    }
+  }
   .cookies {
-    left: 20px;
-    width: 85vw;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     .detail {
       p {
         font-size: 12px;
